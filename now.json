@@ -1,0 +1,14 @@
+{
+  "name": "now-private-modules-repro",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "env": {
+    "NPM_TOKEN": "aab53dfe-955a-411e-9eb3-8f930164ef87"
+  },
+  "routes": [{ "src": "(.*)", "dest": "index.js" }]
+}
