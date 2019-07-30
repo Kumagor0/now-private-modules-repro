@@ -1,5 +1,5 @@
-const tmp = require('@kespa/test-private-module');
+// const tmp = require('@kespa/test-private-module');
 
-module.exports = (req, res) => {
-  res.end(tmp());
+module.exports = res => {
+  res.end('yo');
 };
